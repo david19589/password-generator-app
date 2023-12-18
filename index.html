@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="header-h1">Password Generator</h1>
+    <div class="container-1">
+        <h1 id="password" class="password">P4$5W0rD!</h1>
+        <div class="copy-copied">
+            <h1 id="copied-text" class="copied">COPIED</h1>
+            <img id="copy" src="assets/images/icon-copy.svg" alt="copy" class="copy">
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="box-1">
+            <h1 class="length">Character Length</h1>
+            <span id="number" class="number">10</span>
+        </div>
+        <input id="slide" class="slide" type="range" min="1" max="20" step="1"
+            style="background-size: 50% 100%;" aria-label="input">
+        <div class="box-2">
+            <label class="mini-box">
+                <input type="checkbox" id="uppercase" class="checkbox">
+                <img class="check" src="assets/images/icon-check.svg" alt="check" class="check">
+                <h1 class="include-uppercase">Include Uppercase Letters</h1>
+            </label>
+            <label class="mini-box">
+                <input type="checkbox" id="lowercase" class="checkbox">
+                <img class="check" src="assets/images/icon-check.svg" alt="check" class="check">
+                <h1 class="include-lowercase">Include Lowercase Letters</h1>
+            </label>
+            <label class="mini-box">
+                <input type="checkbox" id="numbers" class="checkbox">
+                <img class="check" src="assets/images/icon-check.svg" alt="check" class="check">
+                <h1 class="include-numbers">Include Numbers</h1>
+            </label>
+            <label class="mini-box">
+                <input type="checkbox" id="symbols" class="checkbox">
+                <img class="check" src="assets/images/icon-check.svg" alt="check" class="check">
+                <h1 class="include-symbols">Include Symbols</h1>
+            </label>
+        </div>
+        <div class="box-3">
+            <h1 class="strength">STRENGTH</h1>
+            <div class="str-rating">
+                <h1 id="pass-strength"></h1>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <button id="generate" class="generate-div">
+            <h1 class="generate">GENERATE</h1>
+            <img src="assets/images/icon-arrow-right.svg" alt="arrow" class="arrow">
+        </button>
+    </div>
+    <script src="functions.js"></script>
+</body>
+
+</html>
